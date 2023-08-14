@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearbase"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textAlignment="center" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            app:placeholderTextColor="@color/white"
+            android:gravity="center"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Username">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:ems="15"
+                android:inputType="text"
+                android:maxLength="20"
+                android:shadowColor="@color/white"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textAlignment="center" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                app:placeholderTextColor="@color/white"
+                app:boxStrokeColor="@color/white"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="Password">
+                <EditText
+                    android:id="@+id/pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:ems="15"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:shadowColor="@color/white"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:textCursorDrawable="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:contentDescription="Clickable Image"
+                android:focusable="true"
+                android:src="@drawable/baseline_visibility_off_24" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:contentDescription="Clickable Image"
+                android:focusable="true"
+                android:src="@drawable/baseline_visibility_24" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="or"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/signupbutinmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Signup"
+            android:textAlignment="center"
+            android:backgroundTint="@color/red"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/signuplinear"
+        android:orientation="vertical"
+        app:flow_verticalAlign="center"
+        android:paddingTop="100dp"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Signup"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            app:placeholderTextColor="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Username">
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            app:placeholderTextColor="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Password">
+            <EditText
+                android:id="@+id/signUppassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            app:placeholderTextColor="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Confirm password">
+            <EditText
+                android:id="@+id/signUpCpassword"
+                android:layout_width="300dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                app:placeholderTextColor="@color/white"
+                app:boxStrokeColor="@color/white"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="Mobile Number">
+                <EditText
+                    android:layout_width="300dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textAlignment="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/verify" />
+        </RelativeLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            app:placeholderTextColor="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Code">
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            app:placeholderTextColor="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Email address">
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/butinsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"/>
+        <Button
+            android:id="@+id/signbbutton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
